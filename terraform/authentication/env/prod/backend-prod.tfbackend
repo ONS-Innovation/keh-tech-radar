@@ -1,5 +1,3 @@
-# For development environment
-# terraform init -backend-config="env/prod/backend-prod.tfbackend"
 bucket         = "sdp-prod-tf-state"
 key            = "sdp-prod-ecs-digital-landscape-auth/terraform.tfstate"
 region         = "eu-west-2"
