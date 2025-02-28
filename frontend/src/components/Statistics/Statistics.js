@@ -151,7 +151,7 @@ function Statistics({
 
       if (showTechRadarOnly) {
         const status = getTechnologyStatus(language);
-        return matchesSearch && status !== null;
+        return matchesSearch && status !== null && status !== 'review' && status !== 'ignore';
       }
 
       return matchesSearch;
