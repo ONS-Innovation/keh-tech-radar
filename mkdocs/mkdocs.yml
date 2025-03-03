@@ -33,7 +33,9 @@ nav:
     - Tech Radar Data: utilities/techRadarData.md
     - Project Data: utilities/projectData.md
     - Repository Data: utilities/repositoryData.md
-
+  - Testing:
+    - Overview: testing/index.md
+    - Backend: testing/backend.md
 theme:
   name: material
   language: en
