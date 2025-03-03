@@ -14,13 +14,18 @@ nav:
     - Review:
       - Overview: pages/review/index.md
   - Contexts:
-    - Data Context: contexts/dataContext.md
+    - Theme: contexts/themeContext.md
+    - Data: contexts/dataContext.md
+    - Banner: contexts/banner.md
   - Components:
-    - Header: components/header.md
+    - Header:
+      - Header: components/header/index.md
+      - Help Modal: components/header/helpModal.md
     - Info Box: components/infoBox.md
-    - Project Modal: components/projectModal.md
+    - Projects:
+      - Projects: components/projects/index.md
+      - Project Modal: components/projects/projectModal.md
     - MultiSelect: components/multiSelect.md
-    - Projects: components/projects.md
     - Skeletons: components/skeletons.md
     - Statistics: components/statistics.md
     - Theme Toggle: components/themeToggle.md
