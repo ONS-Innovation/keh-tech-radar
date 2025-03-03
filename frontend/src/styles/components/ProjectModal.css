@@ -123,32 +123,6 @@
   color: hsl(var(--foreground));
 }
 
-.project-link::after {
-  content: attr(title);
-  position: absolute;
-  bottom: calc(100% + 8px);
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 4px 8px;
-  background: hsl(var(--popover));
-  color: hsl(var(--popover-foreground));
-  font-size: 12px;
-  border-radius: var(--radius);
-  white-space: nowrap;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.2s ease;
-  border: 1px solid hsl(var(--border));
-  pointer-events: none;
-  box-shadow: 0 2px 4px hsl(var(--foreground) / 0.1);
-  z-index: 1000;
-  letter-spacing: 0.75px;
-}
-
-.project-link:hover::after {
-  opacity: 1;
-  visibility: visible;
-}
 
 .project-link svg {
   margin-bottom: -3px;
