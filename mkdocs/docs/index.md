@@ -37,6 +37,10 @@ Administrative interface for managing the Tech Radar:
 - Technology management (change ring, name, quadrant)
 - Add new technology
 
+### Terraform
+
+The terraform code is undocumented within this documentation as it reflects similar infrastructure to applications deployed within the team. It uses a Cognito module, AWS Fargate, AWS ECR and AWS S3. There are no external APIs or services used.
+
 ## Quick Links
 
 - [Tech Radar Documentation](pages/radar/index.md)
