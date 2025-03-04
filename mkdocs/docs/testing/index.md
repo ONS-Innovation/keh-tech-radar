@@ -1,6 +1,8 @@
 # Testing Documentation
 
-The Digital Landscape application uses Python with pytest for backend testing. Frontend testing is not yet implemented.
+## Overview
+
+The Digital Landscape application includes a comprehensive testing framework to ensure API endpoints function correctly and reliably. The testing suite focuses primarily on backend API validation, verifying that data is correctly retrieved, filtered, and processed according to specifications.
 
 ## Testing Architecture
 
@@ -56,31 +58,19 @@ The test suite covers the following API endpoints:
 
 Tests the `/api/health` endpoint to verify server status and health metrics.
 
-```python
-def test_health_check():
-    """Test the health check endpoint functionality."""
-    # Test implementation
-```
+::: testing.backend.test_main.test_health_check
 
 ### Project Data Endpoint
 
 Tests the `/api/csv` endpoint that provides project data from CSV sources.
 
-```python
-def test_csv_endpoint():
-    """Test the CSV data endpoint functionality."""
-    # Test implementation
-```
+::: testing.backend.test_main.test_csv_endpoint
 
 ### Tech Radar Data Endpoint
 
 Tests the `/api/tech-radar/json` endpoint that provides Tech Radar configuration data.
 
-```python
-def test_tech_radar_json_endpoint():
-    """Test the tech radar JSON endpoint functionality."""
-    # Test implementation
-```
+::: testing.backend.test_main.test_tech_radar_json_endpoint
 
 ### Repository Statistics Endpoints
 
@@ -92,15 +82,9 @@ Tests the `/api/json` endpoint with various filtering parameters:
 - Combined parameter filtering
 - Invalid parameter handling
 
-```python
-def test_json_endpoint_no_params():
-    """Test the JSON endpoint without query parameters."""
-    # Test implementation
+::: testing.backend.test_main.test_json_endpoint_no_params
 
-def test_json_endpoint_with_datetime():
-    """Test the JSON endpoint with datetime filtering."""
-    # Test implementation
-```
+::: testing.backend.test_main.test_json_endpoint_with_datetime
 
 ### Repository Project Endpoints
 
@@ -114,15 +98,9 @@ Tests the `/api/repository/project/json` endpoint with various parameters:
 - Combined parameter filtering
 - Language statistics validation
 
-```python
-def test_repository_project_json_with_repos():
-    """Test the repository project JSON endpoint with a valid repository parameter."""
-    # Test implementation
+::: testing.backend.test_main.test_repository_project_json_with_repos
 
-def test_repository_project_json_multiple_repos():
-    """Test the repository project JSON endpoint with multiple repositories."""
-    # Test implementation
-```
+::: testing.backend.test_main.test_repository_project_json_multiple_repos
 
 ### Tech Radar Update Endpoints
 
@@ -134,11 +112,7 @@ Tests the endpoints for updating Tech Radar data:
 - Structure validation
 - Reference validation
 
-```python
-def test_tech_radar_update_valid_structure():
-    """Test the tech radar update endpoint with valid structure."""
-    # Test implementation
-```
+::: testing.backend.test_main.test_tech_radar_update_valid_structure
 
 ## Error Handling Tests
 
@@ -149,15 +123,9 @@ The test suite includes specific tests for error conditions:
 - Missing required parameters
 - Invalid data structures
 
-```python
-def test_invalid_endpoint():
-    """Test error handling for invalid endpoints."""
-    # Test implementation
+::: testing.backend.test_main.test_invalid_endpoint
 
-def test_json_endpoint_invalid_date():
-    """Test the JSON endpoint's handling of invalid date parameters."""
-    # Test implementation
-```
+::: testing.backend.test_main.test_json_endpoint_invalid_date
 
 ## Code Quality
 

@@ -5,11 +5,11 @@ setup:
 
 .PHONY: mkdocs
 mkdocs:  ## Run mkdocs.
-	mkdocs serve
+	PYTHONPATH=.. mkdocs serve
 
 .PHONY: mkdocs-build
 mkdocs-build:  ## Build mkdocs.
-	mkdocs build
+	PYTHONPATH=.. mkdocs build
 
 
 clean:

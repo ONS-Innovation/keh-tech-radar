@@ -95,6 +95,11 @@ markdown_extensions:
 
 plugins:
   - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths:
+            - [..]
 
 extra_css:
   - stylesheets/extra.css
